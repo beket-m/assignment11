@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2020 Proposal Form</title>
+
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+  <main id="wrapper">
+
+    <h1>2020 Proposal Form</h1>
+
+    <p class="instructions">
+      Please complete the information below to submit your
+      presentation proposal. Fields marked with an
+      asterisk (*) are required.
+    </p>
+
+    <form action="" method="post" id="proposal2020">
+
+      <!-- Speaker Information -->
+      <div id="formcol1">
+
+        <fieldset>
+          <legend>Speaker Info</legend>
+
+          <ul>
+
+            <li>
+              <label for="fstspkr1">First Name: *</label>
+              <input
+                id="fstspkr1"
+                name="fstspkr1"
+                type="text"
+                class="reqfield"
+                autocomplete="given-name"
+                required>
+            </li>
+
+            <li>
+              <label for="lstname1">Last Name: *</label>
+              <input
+                id="lstname1"
+                name="lstname1"
+                type="text"
+                class="reqfield"
+                autocomplete="family-name"
+                required>
+            </li>
+
+            <li>
+              <label for="spkrtitle1">Title:</label>
+              <input
+                id="spkrtitle1"
+                name="spkrtitle1"
+                type="text"
+                maxlength="48"
+                autocomplete="organization-title">
+            </li>
+
+            <li>
+              <label for="company1">Company:</label>
+              <input
+                id="company1"
+                name="company1"
+                type="text"
+                autocomplete="organization">
+            </li>
+
+            <li>
+              <label for="department1">Department:</label>
+              <input
+                id="department1"
+                name="department1"
+                type="text">
+            </li>
+
+            <li>
+              <label for="address1">Address: *</label>
+              <input
+                id="address1"
+                name="address1"
+                type="text"
+                class="reqfield"
+                autocomplete="street-address"
+                required>
+            </li>
+
+          </ul>
+
+        </fieldset>
+
+      </div>
+
+      <!-- Presentation Type -->
+      <div id="multchoice">
+
+        <fieldset>
+          <legend>Type of Presentation</legend>
+
+          <p class="field-instructions">
+            Please select your presentation type:
+          </p>
+
+          <div class="radio-group">
+
+            <div class="radio-option">
+              <input
+                value="1"
+                id="TypeofPres_lec"
+                name="p-type"
+                type="radio"
+                required>
+              <label for="TypeofPres_lec">Lecture</label>
+            </div>
+
+            <div class="radio-option">
+              <input
+                value="2"
+                id="TypeofPres_lab"
+                name="p-type"
+                type="radio">
+              <label for="TypeofPres_lab">Computer Lab</label>
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <!-- Submit Button -->
+        <p class="submit-button">
+          <input
+            type="submit"
+            value="Submit your proposal">
+        </p>
+
+      </div>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
